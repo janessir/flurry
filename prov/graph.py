@@ -104,9 +104,17 @@ class Graph():
         self.edgetypes = defaultdict(list)
         #self.nodehashes = set()
         #self.edgehashes = set()
+        
+        #ADDED
+        # descriptive list of the actions performed
+        self.actions = ""
 
     def getIndex(self):
         return self.id
+
+    #ADDED
+    def getActions(self):
+        return self.actions
 
     def num_nodes(self):
         return len(self.nodes)
@@ -202,6 +210,12 @@ class Graph():
             output_dict[str_schema] = (src_dst[0], src_dst[1])
         return output_dict
 
+    #ADDED
+    def add_action(self, action):
+        if self.actions != "":
+            self.actions += ", "
+        self.actions += action
+
     def add_node(self, serial, type, ):
         self.nodes[serial] = Node(serial, type, len(self.nodes))
         self.nodetypes[type].append(serial)
@@ -287,3 +301,4 @@ class Graph():
         self.schemas = defaultdict(list)
         self.nodetypes = defaultdict(list)
         self.edgetypes = defaultdict(list)
+

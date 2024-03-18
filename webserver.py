@@ -107,7 +107,7 @@ def main():
     database = ProvDB("data/camflow.db", prov_level, edge_gran, node_gran)
     DRIVER = ds.setupDriver()
     while i < num_loops:
-        sr.runList(database, scripts, SAVE_TO_DISK)
+        sr.runList(database, scripts, SAVE_TO_DISK, actions) #ADDED actions argument
         i += 1
     DRIVER.close()
 main()

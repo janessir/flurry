@@ -26,6 +26,7 @@ def reverse_dict(dictionary):
 
 def print_graph_info(G, id):
     print("Statistics for graph: " + str(id))
+    #print("Actions taken: " + str(G.getActions()))
     #print("Binary type: " + str(bin))
     #print("Multiclass type: " + str(multi))
     print("number of nodes: " + str(G.num_nodes()))
@@ -175,6 +176,7 @@ class GraphSerializer():
         out += "/stats{}.txt".format(str(self.id), str(self.id))
         with open(f'{out}', 'w') as f:
             f.write("Statistics for graph: " + str(self.id) + "\n")
+            f.write("Actions taken: " + str(G.getActions()) + "\n") #ADDED
             #f.write("Class Selections: " + str(self.bin_type) + "\n")
             f.write("number of nodes: " + str(G.num_nodes()) + "\n")
             f.write("number of node types: " + str(G.num_node_types()) + "\n")

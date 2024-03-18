@@ -1,0 +1,41 @@
+Statistics for graph: 13
+Actions taken: message, ping
+number of nodes: 12272
+number of node types: 11
+file - 26669
+process_memory - 4590
+task - 4466
+socket - 1504
+pipe - 43
+iattr - 3
+machine - 6
+path - 57
+address - 21
+link - 2
+argv - 7
+number of edges: 36354
+number of edge types: 4
+wasDerivedFrom - 26913
+used - 3144
+wasGeneratedBy - 3153
+wasInformedBy - 3144
+number of distinct edge schemas: 19
+file-wasDerivedFrom-file - 3829
+file-wasDerivedFrom-process_memory - 12036
+task-used-socket - 3001
+process_memory-wasGeneratedBy-task - 3040
+task-wasInformedBy-task - 3144
+socket-wasDerivedFrom-socket - 270
+socket-wasDerivedFrom-task - 132
+process_memory-wasDerivedFrom-process_memory - 314
+task-used-file - 16
+process_memory-wasDerivedFrom-file - 10315
+task-used-process_memory - 114
+socket-wasGeneratedBy-task - 93
+pipe-wasGeneratedBy-task - 16
+pipe-wasDerivedFrom-pipe - 14
+task-used-pipe - 13
+iattr-wasGeneratedBy-task - 1
+file-wasDerivedFrom-iattr - 2
+file-wasGeneratedBy-task - 3
+link-wasDerivedFrom-link - 1

@@ -1,6 +1,45 @@
 Statistics for graph: 3
-number of nodes: 0
-number of node types: 0
-number of edges: 0
-number of edge types: 0
-number of distinct edge schemas: 0
+number of nodes: 6424
+number of node types: 10
+task - 3761
+file - 19212
+process_memory - 3886
+pipe - 18
+socket - 1811
+link - 10
+machine - 5
+path - 43
+address - 7
+iattr - 2
+number of edges: 28192
+number of edge types: 5
+used - 2556
+wasGeneratedBy - 2804
+wasInformedBy - 2541
+wasDerivedFrom - 20281
+wasAssociatedWith - 10
+number of distinct edge schemas: 24
+task-used-process_memory - 473
+task-used-pipe - 8
+task-used-file - 106
+pipe-wasGeneratedBy-task - 10
+process_memory-wasGeneratedBy-task - 2093
+task-wasInformedBy-task - 2541
+process_memory-wasDerivedFrom-file - 12512
+process_memory-wasDerivedFrom-process_memory - 694
+pipe-wasDerivedFrom-pipe - 3
+socket-wasGeneratedBy-task - 667
+socket-wasDerivedFrom-socket - 462
+task-used-socket - 1969
+file-wasDerivedFrom-file - 1867
+file-wasDerivedFrom-process_memory - 4612
+file-wasGeneratedBy-task - 32
+link-wasDerivedFrom-link - 5
+socket-wasDerivedFrom-task - 117
+machine-wasAssociatedWith-task - 10
+process_memory-wasDerivedFrom-path - 3
+socket-wasDerivedFrom-address - 2
+file-wasDerivedFrom-path - 1
+iattr-wasGeneratedBy-task - 2
+file-wasDerivedFrom-iattr - 2
+socket-wasDerivedFrom-path - 1

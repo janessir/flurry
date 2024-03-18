@@ -1,0 +1,34 @@
+Statistics for graph: 8
+Actions taken: /,h,o,m,e,/,t,e,e,h,e,e,2,/,f,l,u,r,r,y,/,f,l,u,r,r,y,/,s,c,r,i,p,t,s,/,q,u,e,s,t,i,o,n,n,a,i,r,e,.,p,y,,, ,/,h,o,m,e,/,t,e,e,h,e,e,2,/,f,l,u,r,r,y,/,f,l,u,r,r,y,/,s,c,r,i,p,t,s,/,m,e,s,s,a,g,e,b,o,a,r,d,.,p,ynumber of nodes: 10506
+number of node types: 9
+task - 9310
+file - 8092
+process_memory - 3425
+socket - 2460
+path - 129
+address - 24
+machine - 6
+pipe - 2
+argv - 7
+number of edges: 29348
+number of edge types: 4
+used - 6996
+wasGeneratedBy - 7006
+wasInformedBy - 6997
+wasDerivedFrom - 8349
+number of distinct edge schemas: 15
+task-used-socket - 6774
+process_memory-wasGeneratedBy-task - 6882
+task-wasInformedBy-task - 6997
+file-wasDerivedFrom-process_memory - 3293
+file-wasDerivedFrom-file - 956
+socket-wasDerivedFrom-task - 90
+process_memory-wasDerivedFrom-process_memory - 192
+task-used-file - 109
+process_memory-wasDerivedFrom-file - 3664
+task-used-process_memory - 113
+socket-wasGeneratedBy-task - 53
+socket-wasDerivedFrom-socket - 153
+file-wasGeneratedBy-task - 69
+pipe-wasGeneratedBy-task - 2
+process_memory-wasDerivedFrom-path - 1
