@@ -106,10 +106,12 @@ class ProvDB():
         db_conn = sqlite3.connect(self.db_file)
         if saveToDisk:
             graph.save_to_disk(db_conn)
-        outputter = GraphTransformer("output", graph.getIndex())
+        #outputter = GraphTransformer("output", graph.getIndex())
+        outputter = GraphTransformer("output/benign", graph.getIndex()) #MODIFIED TO OUTPUT TO output/benign DIRECTORY
         outputter.graph_to_png(graph)
         outputter.graph_to_pickle(graph)
-        serializer = GraphSerializer("output", graph.getIndex())
+        #serializer = GraphSerializer("output", graph.getIndex())
+        serializer = GraphSerializer("output/benign", graph.getIndex()) #MODIFIED TO OUTPUT TO output/benign DIRECTORY
         serializer.graph_info_to_file(graph)
         serializer.node_types_to_json(graph)
         serializer.edge_types_to_json(graph)

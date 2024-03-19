@@ -1,0 +1,8 @@
+7 possible combinations of actions:
+message
+submit
+query
+ping
+databaseentry
+login
+message,submit

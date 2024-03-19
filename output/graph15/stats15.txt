@@ -1,0 +1,34 @@
+Statistics for graph: 15
+Actions taken: query
+number of nodes: 1211
+number of node types: 6
+task - 147
+file - 2363
+process_memory - 411
+pipe - 8
+socket - 58
+link - 4
+number of edges: 2693
+number of edge types: 4
+used - 96
+wasGeneratedBy - 99
+wasInformedBy - 90
+wasDerivedFrom - 2408
+number of distinct edge schemas: 17
+task-used-process_memory - 25
+task-used-pipe - 3
+task-used-file - 34
+pipe-wasGeneratedBy-task - 5
+process_memory-wasGeneratedBy-task - 71
+task-wasInformedBy-task - 90
+process_memory-wasDerivedFrom-file - 1233
+process_memory-wasDerivedFrom-process_memory - 62
+pipe-wasDerivedFrom-pipe - 2
+task-used-socket - 34
+socket-wasGeneratedBy-task - 18
+socket-wasDerivedFrom-socket - 18
+file-wasDerivedFrom-file - 344
+link-wasDerivedFrom-link - 2
+file-wasDerivedFrom-process_memory - 745
+file-wasGeneratedBy-task - 5
+socket-wasDerivedFrom-task - 2
