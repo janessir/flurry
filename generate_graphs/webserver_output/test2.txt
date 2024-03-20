@@ -1,0 +1,159 @@
+Input: databaseentry
+Output:
+[31mxssstored--Execute XSS Stored Attack[0m
+[31mxssreflected--Execute XSS Reflected Attack[0m
+[31mxssdom--Execute XSS DOM Attack[0m
+[31mcommandinjection--Execute Command Injection Attack[0m
+[31msqlinjection--Execute SQL Injection Attack[0m
+[31mbruteforce--Execute Brute Force Attack[0m
+[31mcustomattack--Use My Own Attack[0m
+[32mmessage--Message Board Post (Benign version of XSS stored)[0m
+[32msubmit--Complete a Questionnaire (Benign version of XSS reflected)[0m
+[32mquery--Query a Webpage (Benign version of XSS DOM)[0m
+[32mping--Ping Local Host (Benign version of command injection)[0m
+[32mdatabaseentry--Create a User ID (Benign version of SQL injection)[0m
+[32mlogin--Enter Username and Password (Benign version of brute force)[0m
+[32mcustombehavior--Use My Own Custom Behavior[0m
+Select one or more attacks to run in a comma-separated list: > 1 iterations are made
+>Whole system provenance capture granularity is used
+>COARSE granularity (ie W3C-PROV model types) for edge types is used
+>FINE granularity (ie Camflow-provided node and edge types) for node types is used
+
+
+Input: message,query
+Output:
+None
+
+Input: message,ping
+Output:
+[31mxssstored--Execute XSS Stored Attack[0m
+[31mxssreflected--Execute XSS Reflected Attack[0m
+[31mxssdom--Execute XSS DOM Attack[0m
+[31mcommandinjection--Execute Command Injection Attack[0m
+[31msqlinjection--Execute SQL Injection Attack[0m
+[31mbruteforce--Execute Brute Force Attack[0m
+[31mcustomattack--Use My Own Attack[0m
+[32mmessage--Message Board Post (Benign version of XSS stored)[0m
+[32msubmit--Complete a Questionnaire (Benign version of XSS reflected)[0m
+[32mquery--Query a Webpage (Benign version of XSS DOM)[0m
+[32mping--Ping Local Host (Benign version of command injection)[0m
+[32mdatabaseentry--Create a User ID (Benign version of SQL injection)[0m
+[32mlogin--Enter Username and Password (Benign version of brute force)[0m
+[32mcustombehavior--Use My Own Custom Behavior[0m
+Select one or more attacks to run in a comma-separated list: > 1 iterations are made
+>Whole system provenance capture granularity is used
+>COARSE granularity (ie W3C-PROV model types) for edge types is used
+>FINE granularity (ie Camflow-provided node and edge types) for node types is used
+Driver initialized.
+Connecting MQTT subscriber...
+Connected with result code 0
+running /home/teehee2/flurry/flurry/scripts/messageboard.py
+running /home/teehee2/flurry/flurry/scripts/commandlineping.py
+Saving graph to database...
+type: 0.06896710395812988
+edges: 2.3603439331054688e-05
+Graph 23 saved.
+Drawing graph...
+Graph drawn to output/benign/graph23/graph23.png.
+converting graph to pickle...
+Making NetworkX Graph...
+Graph constructed.
+Graph pickle outputted to output/benign/graph23/graph23.gpickle.
+outputting node types to JSON format...
+Node types outputted to output/benign/graph23/nodetypes23.json.
+outputting edge types to JSON format...
+Edge types outputted to output/benign/graph23/edgetypes23.json.
+outputting graph to JSON format...
+Graph outputted to output/benign/graph23/graph23.json.
+
+
+Input: message,databaseentry
+Output:
+[31mxssstored--Execute XSS Stored Attack[0m
+[31mxssreflected--Execute XSS Reflected Attack[0m
+[31mxssdom--Execute XSS DOM Attack[0m
+[31mcommandinjection--Execute Command Injection Attack[0m
+[31msqlinjection--Execute SQL Injection Attack[0m
+[31mbruteforce--Execute Brute Force Attack[0m
+[31mcustomattack--Use My Own Attack[0m
+[32mmessage--Message Board Post (Benign version of XSS stored)[0m
+[32msubmit--Complete a Questionnaire (Benign version of XSS reflected)[0m
+[32mquery--Query a Webpage (Benign version of XSS DOM)[0m
+[32mping--Ping Local Host (Benign version of command injection)[0m
+[32mdatabaseentry--Create a User ID (Benign version of SQL injection)[0m
+[32mlogin--Enter Username and Password (Benign version of brute force)[0m
+[32mcustombehavior--Use My Own Custom Behavior[0m
+Select one or more attacks to run in a comma-separated list: > 1 iterations are made
+>Whole system provenance capture granularity is used
+>COARSE granularity (ie W3C-PROV model types) for edge types is used
+>FINE granularity (ie Camflow-provided node and edge types) for node types is used
+Driver initialized.
+Connecting MQTT subscriber...
+Connected with result code 0
+running /home/teehee2/flurry/flurry/scripts/messageboard.py
+running /home/teehee2/flurry/flurry/scripts/databaseentry.py
+Saving graph to database...
+type: 0.07654452323913574
+edges: 2.5272369384765625e-05
+Graph 24 saved.
+Drawing graph...
+Graph drawn to output/benign/graph24/graph24.png.
+converting graph to pickle...
+Making NetworkX Graph...
+Graph constructed.
+Graph pickle outputted to output/benign/graph24/graph24.gpickle.
+outputting node types to JSON format...
+Node types outputted to output/benign/graph24/nodetypes24.json.
+outputting edge types to JSON format...
+Edge types outputted to output/benign/graph24/edgetypes24.json.
+outputting graph to JSON format...
+Graph outputted to output/benign/graph24/graph24.json.
+
+
+Input: message,login
+Output:
+[31mxssstored--Execute XSS Stored Attack[0m
+[31mxssreflected--Execute XSS Reflected Attack[0m
+[31mxssdom--Execute XSS DOM Attack[0m
+[31mcommandinjection--Execute Command Injection Attack[0m
+[31msqlinjection--Execute SQL Injection Attack[0m
+[31mbruteforce--Execute Brute Force Attack[0m
+[31mcustomattack--Use My Own Attack[0m
+[32mmessage--Message Board Post (Benign version of XSS stored)[0m
+[32msubmit--Complete a Questionnaire (Benign version of XSS reflected)[0m
+[32mquery--Query a Webpage (Benign version of XSS DOM)[0m
+[32mping--Ping Local Host (Benign version of command injection)[0m
+[32mdatabaseentry--Create a User ID (Benign version of SQL injection)[0m
+[32mlogin--Enter Username and Password (Benign version of brute force)[0m
+[32mcustombehavior--Use My Own Custom Behavior[0m
+Select one or more attacks to run in a comma-separated list: > 1 iterations are made
+>Whole system provenance capture granularity is used
+>COARSE granularity (ie W3C-PROV model types) for edge types is used
+>FINE granularity (ie Camflow-provided node and edge types) for node types is used
+Driver initialized.
+Connecting MQTT subscriber...
+Connected with result code 0
+running /home/teehee2/flurry/flurry/scripts/messageboard.py
+running /home/teehee2/flurry/flurry/scripts/singlelogin.py
+Saving graph to database...
+type: 0.029833555221557617
+edges: 2.2649765014648438e-05
+Graph 25 saved.
+Drawing graph...
+Graph drawn to output/benign/graph25/graph25.png.
+converting graph to pickle...
+Making NetworkX Graph...
+Graph constructed.
+Graph pickle outputted to output/benign/graph25/graph25.gpickle.
+outputting node types to JSON format...
+Node types outputted to output/benign/graph25/nodetypes25.json.
+outputting edge types to JSON format...
+Edge types outputted to output/benign/graph25/edgetypes25.json.
+outputting graph to JSON format...
+Graph outputted to output/benign/graph25/graph25.json.
+
+
+
+
+------------------------------------------------------
+Unsuccessful runs:run[0]

@@ -1,0 +1,45 @@
+Statistics for graph: 30
+Actions taken: submit, login
+number of nodes: 8294
+number of node types: 10
+file - 42551
+task - 4315
+socket - 2177
+process_memory - 6871
+pipe - 33
+link - 2
+machine - 5
+path - 48
+address - 14
+iattr - 10
+number of edges: 52424
+number of edge types: 5
+wasDerivedFrom - 43730
+wasInformedBy - 2806
+used - 2819
+wasGeneratedBy - 3060
+wasAssociatedWith - 9
+number of distinct edge schemas: 23
+file-wasDerivedFrom-file - 3607
+task-wasInformedBy-task - 2806
+task-used-process_memory - 627
+task-used-pipe - 9
+task-used-file - 133
+pipe-wasGeneratedBy-task - 22
+process_memory-wasGeneratedBy-task - 2199
+socket-wasDerivedFrom-socket - 639
+process_memory-wasDerivedFrom-file - 30362
+process_memory-wasDerivedFrom-process_memory - 888
+pipe-wasDerivedFrom-pipe - 6
+socket-wasGeneratedBy-task - 764
+task-used-socket - 2050
+file-wasGeneratedBy-task - 66
+file-wasDerivedFrom-process_memory - 8117
+link-wasDerivedFrom-link - 1
+socket-wasDerivedFrom-task - 86
+machine-wasAssociatedWith-task - 9
+file-wasDerivedFrom-path - 7
+process_memory-wasDerivedFrom-path - 6
+socket-wasDerivedFrom-address - 2
+iattr-wasGeneratedBy-task - 9
+file-wasDerivedFrom-iattr - 9

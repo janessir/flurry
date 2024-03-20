@@ -1,0 +1,118 @@
+Input: submit,query
+Output:
+None
+
+Input: submit,ping
+Output:
+None
+
+Input: submit,databaseentry
+Output:
+None
+
+Input: submit,login
+Output:
+None
+
+Input: query,message
+Output:
+None
+
+Input: query,submit
+Output:
+None
+
+Input: query,ping
+Output:
+None
+
+Input: query,databaseentry
+Output:
+None
+
+Input: query,login
+Output:
+None
+
+Input: ping,message
+Output:
+None
+
+Input: ping,submit
+Output:
+None
+
+Input: ping,query
+Output:
+None
+
+Input: ping,databaseentry
+Output:
+None
+
+Input: ping,login
+Output:
+None
+
+Input: databaseentry,message
+Output:
+None
+
+Input: databaseentry,submit
+Output:
+None
+
+Input: databaseentry,query
+Output:
+None
+
+Input: databaseentry,ping
+Output:
+None
+
+Input: databaseentry,login
+Output:
+None
+
+Input: login,message
+Output:
+None
+
+Input: login,submit
+Output:
+None
+
+Input: login,query
+Output:
+None
+
+Input: login,ping
+Output:
+None
+
+
+
+------------------------------------------------------
+Unsuccessful runs:submit,query
+submit,ping
+submit,databaseentry
+submit,login
+query,message
+query,submit
+query,ping
+query,databaseentry
+query,login
+ping,message
+ping,submit
+ping,query
+ping,databaseentry
+ping,login
+databaseentry,message
+databaseentry,submit
+databaseentry,query
+databaseentry,ping
+databaseentry,login
+login,message
+login,submit
+login,query
+login,ping

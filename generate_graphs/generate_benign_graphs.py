@@ -1,4 +1,7 @@
 import subprocess
+import sys
+sys.path.append('/home/teehee2/flurry/flurry')
+from util.driversetup import DRIVER
 
 def run_python_webserver_file(input_str, sudo_password=None):
     try:
@@ -10,7 +13,7 @@ def run_python_webserver_file(input_str, sudo_password=None):
                                     encoding='utf-8')
         
         # Feed input string
-        output, error = process.communicate(input=input_str, timeout=50)
+        output, error = process.communicate(input=input_str, timeout=100)
 
         # Check if sudo password is required
         if "[sudo] password" in output.lower() and sudo_password:
@@ -31,9 +34,11 @@ def read_input_file(input_file):
         return []
 
 def main():
-    scenarios_file = str(input("Enter your input scenario text file path: "))  # Path to your input scenario text file (benign_scenario.txt or malicious_scenario.txt)
+    scenarios_file = str(input("Enter your input scenarios (.txt file) path: "))  # Path to your input scenario text file (benign_scenario.txt or malicious_scenario.txt)
     unsuccessful_runs = []
 
+    # Save output and specifically, the unsuccessful runs in a .txt file
+    output_file = 'generate_graphs/webserver_output/' + str(input("Enter a tag (no whitespaces) for this test run: ")) + '.txt'
     lines = read_input_file(scenarios_file)
     if not lines:
         print("Input file is empty or not found.")
@@ -45,15 +50,30 @@ def main():
         line = line.strip()
         print(f"Running scenario: {line}")
         output, error = run_python_webserver_file(line, sudo_password)
+        # Write output of webserver.py run into a .txt file for debugging
+        with open(output_file, 'a') as f:
+            f.write(f"Input: {line}\nOutput:\n{output}\n\n")
         if error:
             unsuccessful_runs.append((line, error))
 
     if unsuccessful_runs:
-        print("Unsuccessful runs:")
+        print("\n\nUnsuccessful runs:\n")
+
+        with open(output_file, 'a') as f:
+            f.write(f"\n\n------------------------------------------------------\nUnsuccessful runs:")
         for run in unsuccessful_runs:
-            print(f"Input: {run[0]}\nError: {run[1]}")
+            if 'timed out' not in run[1]: # ignoring time out errors
+                print(f"Input: {run[0]}\nError: {run[1]}")
+
+                with open(output_file, 'a') as f:
+                    f.write(f"{run[0]}\n")
     else:
         print("All runs were successful.")
+        
+        with open(output_file, 'a') as f:
+            f.write(f"All runs were successful\n")
+    
+    print("Output of running webserver.py can be found in: ", output_file)
 
 if __name__ == "__main__":
     main()

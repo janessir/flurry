@@ -1,8 +1,2 @@
-7 possible combinations of actions:
-message
-submit
-query
-ping
-databaseentry
-login
-message,submit
+1 possible combinations of actions:
+query,message

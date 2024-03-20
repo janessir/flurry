@@ -95,13 +95,13 @@ def main():
 
     # num_loops = int(input("Execution loop is constructed. How many iterations would you like to make? "))
     num_loops = 1 # Fixed to facilitate simulation and generatiion of graphs
-    print(f'> {num_loops} iterations are made')
+    print(f'>> {num_loops} iteration(s) made')
     #prov.print_menu()
     #prov_level = int(input("Select provenance capture granularity: "))
     #while prov_level < 1 or prov_level > 4:
     #    prov_level = int(input("Invalid option selected. Try again."))
     prov_level = 1 #ie whole system provenance capture granularity is used; # Fixed to facilitate simulation and generatiion of graphs
-    print('>Whole system provenance capture granularity is used')
+    print('>> Whole system provenance capture granularity is used')
     i = 0
 
     #print("FINE = CamFlow-provided node and edge types, COARSE = W3C-PROV model types")
@@ -109,13 +109,13 @@ def main():
     #while edge_gran != 'c' and edge_gran != 'f':
     #    edge_gran = str(input("Invalid option selected. Try again.")).lower()
     edge_gran = 'c' #ie fix COARSE (ie w3c-prov model types) edge types
-    print('>COARSE granularity (ie W3C-PROV model types) for edge types is used')
+    print('> COARSE granularity (ie W3C-PROV model types) for edge types is used')
     
     #node_gran = str(input("Select FINE (f) or COARSE (c) granularity for node types: " )).lower()
     #while node_gran != 'c' and node_gran != 'f':
     #    node_gran = str(input("Invalid option selected. Try again.")).lower()
     node_gran = 'f'
-    print('>FINE granularity (ie Camflow-provided node and edge types) for node types is used')
+    print('> FINE granularity (ie Camflow-provided node and edge types) for node types is used')
     
     database = ProvDB("data/camflow.db", prov_level, edge_gran, node_gran)
     DRIVER = ds.setupDriver()
