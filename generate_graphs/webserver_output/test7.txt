@@ -1,0 +1,312 @@
+Input: message,submit,query
+Output:
+None
+
+Input: message,query,submit
+Output:
+[31mxssstored--Execute XSS Stored Attack[0m
+[31mxssreflected--Execute XSS Reflected Attack[0m
+[31mxssdom--Execute XSS DOM Attack[0m
+[31mcommandinjection--Execute Command Injection Attack[0m
+[31msqlinjection--Execute SQL Injection Attack[0m
+[31mbruteforce--Execute Brute Force Attack[0m
+[31mcustomattack--Use My Own Attack[0m
+[32mmessage--Message Board Post (Benign version of XSS stored)[0m
+[32msubmit--Complete a Questionnaire (Benign version of XSS reflected)[0m
+[32mquery--Query a Webpage (Benign version of XSS DOM)[0m
+[32mping--Ping Local Host (Benign version of command injection)[0m
+[32mdatabaseentry--Create a User ID (Benign version of SQL injection)[0m
+[32mlogin--Enter Username and Password (Benign version of brute force)[0m
+[32mcustombehavior--Use My Own Custom Behavior[0m
+Select one or more attacks to run in a comma-separated list: >> 1 iteration(s) made
+>> Whole system provenance capture granularity is used
+> COARSE granularity (ie W3C-PROV model types) for edge types is used
+> FINE granularity (ie Camflow-provided node and edge types) for node types is used
+Driver initialized.
+Connecting MQTT subscriber...
+Connected with result code 0
+running /home/teehee2/flurry/flurry/scripts/messageboard.py
+running /home/teehee2/flurry/flurry/scripts/pagequery.py
+running /home/teehee2/flurry/flurry/scripts/questionnaire.py
+Saving graph to database...
+type: 0.013103723526000977
+edges: 2.47955322265625e-05
+Graph 123 saved.
+Drawing graph...
+Graph drawn to output/benign/graph123/graph123.png.
+converting graph to pickle...
+Making NetworkX Graph...
+Graph constructed.
+Graph pickle outputted to output/benign/graph123/graph123.gpickle.
+outputting node types to JSON format...
+Node types outputted to output/benign/graph123/nodetypes123.json.
+outputting edge types to JSON format...
+Edge types outputted to output/benign/graph123/edgetypes123.json.
+outputting graph to JSON format...
+Graph outputted to output/benign/graph123/graph123.json.
+
+
+Input: message,query,ping
+Output:
+[31mxssstored--Execute XSS Stored Attack[0m
+[31mxssreflected--Execute XSS Reflected Attack[0m
+[31mxssdom--Execute XSS DOM Attack[0m
+[31mcommandinjection--Execute Command Injection Attack[0m
+[31msqlinjection--Execute SQL Injection Attack[0m
+[31mbruteforce--Execute Brute Force Attack[0m
+[31mcustomattack--Use My Own Attack[0m
+[32mmessage--Message Board Post (Benign version of XSS stored)[0m
+[32msubmit--Complete a Questionnaire (Benign version of XSS reflected)[0m
+[32mquery--Query a Webpage (Benign version of XSS DOM)[0m
+[32mping--Ping Local Host (Benign version of command injection)[0m
+[32mdatabaseentry--Create a User ID (Benign version of SQL injection)[0m
+[32mlogin--Enter Username and Password (Benign version of brute force)[0m
+[32mcustombehavior--Use My Own Custom Behavior[0m
+Select one or more attacks to run in a comma-separated list: >> 1 iteration(s) made
+>> Whole system provenance capture granularity is used
+> COARSE granularity (ie W3C-PROV model types) for edge types is used
+> FINE granularity (ie Camflow-provided node and edge types) for node types is used
+Driver initialized.
+Connecting MQTT subscriber...
+Connected with result code 0
+running /home/teehee2/flurry/flurry/scripts/messageboard.py
+running /home/teehee2/flurry/flurry/scripts/pagequery.py
+running /home/teehee2/flurry/flurry/scripts/commandlineping.py
+Saving graph to database...
+type: 0.01591205596923828
+edges: 2.7418136596679688e-05
+Graph 124 saved.
+Drawing graph...
+Graph drawn to output/benign/graph124/graph124.png.
+converting graph to pickle...
+Making NetworkX Graph...
+Graph constructed.
+Graph pickle outputted to output/benign/graph124/graph124.gpickle.
+outputting node types to JSON format...
+Node types outputted to output/benign/graph124/nodetypes124.json.
+outputting edge types to JSON format...
+Edge types outputted to output/benign/graph124/edgetypes124.json.
+outputting graph to JSON format...
+Graph outputted to output/benign/graph124/graph124.json.
+
+
+Input: message,ping,query
+Output:
+[31mxssstored--Execute XSS Stored Attack[0m
+[31mxssreflected--Execute XSS Reflected Attack[0m
+[31mxssdom--Execute XSS DOM Attack[0m
+[31mcommandinjection--Execute Command Injection Attack[0m
+[31msqlinjection--Execute SQL Injection Attack[0m
+[31mbruteforce--Execute Brute Force Attack[0m
+[31mcustomattack--Use My Own Attack[0m
+[32mmessage--Message Board Post (Benign version of XSS stored)[0m
+[32msubmit--Complete a Questionnaire (Benign version of XSS reflected)[0m
+[32mquery--Query a Webpage (Benign version of XSS DOM)[0m
+[32mping--Ping Local Host (Benign version of command injection)[0m
+[32mdatabaseentry--Create a User ID (Benign version of SQL injection)[0m
+[32mlogin--Enter Username and Password (Benign version of brute force)[0m
+[32mcustombehavior--Use My Own Custom Behavior[0m
+Select one or more attacks to run in a comma-separated list: >> 1 iteration(s) made
+>> Whole system provenance capture granularity is used
+> COARSE granularity (ie W3C-PROV model types) for edge types is used
+> FINE granularity (ie Camflow-provided node and edge types) for node types is used
+Driver initialized.
+Connecting MQTT subscriber...
+Connected with result code 0
+running /home/teehee2/flurry/flurry/scripts/messageboard.py
+running /home/teehee2/flurry/flurry/scripts/commandlineping.py
+running /home/teehee2/flurry/flurry/scripts/pagequery.py
+Saving graph to database...
+type: 0.022922277450561523
+edges: 3.4332275390625e-05
+Graph 125 saved.
+Drawing graph...
+Graph drawn to output/benign/graph125/graph125.png.
+converting graph to pickle...
+Making NetworkX Graph...
+Graph constructed.
+Graph pickle outputted to output/benign/graph125/graph125.gpickle.
+outputting node types to JSON format...
+Node types outputted to output/benign/graph125/nodetypes125.json.
+outputting edge types to JSON format...
+Edge types outputted to output/benign/graph125/edgetypes125.json.
+outputting graph to JSON format...
+Graph outputted to output/benign/graph125/graph125.json.
+
+
+Input: message,ping,login
+Output:
+[31mxssstored--Execute XSS Stored Attack[0m
+[31mxssreflected--Execute XSS Reflected Attack[0m
+[31mxssdom--Execute XSS DOM Attack[0m
+[31mcommandinjection--Execute Command Injection Attack[0m
+[31msqlinjection--Execute SQL Injection Attack[0m
+[31mbruteforce--Execute Brute Force Attack[0m
+[31mcustomattack--Use My Own Attack[0m
+[32mmessage--Message Board Post (Benign version of XSS stored)[0m
+[32msubmit--Complete a Questionnaire (Benign version of XSS reflected)[0m
+[32mquery--Query a Webpage (Benign version of XSS DOM)[0m
+[32mping--Ping Local Host (Benign version of command injection)[0m
+[32mdatabaseentry--Create a User ID (Benign version of SQL injection)[0m
+[32mlogin--Enter Username and Password (Benign version of brute force)[0m
+[32mcustombehavior--Use My Own Custom Behavior[0m
+Select one or more attacks to run in a comma-separated list: >> 1 iteration(s) made
+>> Whole system provenance capture granularity is used
+> COARSE granularity (ie W3C-PROV model types) for edge types is used
+> FINE granularity (ie Camflow-provided node and edge types) for node types is used
+Driver initialized.
+Connecting MQTT subscriber...
+Connected with result code 0
+running /home/teehee2/flurry/flurry/scripts/messageboard.py
+running /home/teehee2/flurry/flurry/scripts/commandlineping.py
+running /home/teehee2/flurry/flurry/scripts/singlelogin.py
+Saving graph to database...
+type: 0.08980345726013184
+edges: 2.6464462280273438e-05
+Graph 126 saved.
+Drawing graph...
+Graph drawn to output/benign/graph126/graph126.png.
+converting graph to pickle...
+Making NetworkX Graph...
+Graph constructed.
+Graph pickle outputted to output/benign/graph126/graph126.gpickle.
+outputting node types to JSON format...
+Node types outputted to output/benign/graph126/nodetypes126.json.
+outputting edge types to JSON format...
+Edge types outputted to output/benign/graph126/edgetypes126.json.
+outputting graph to JSON format...
+Graph outputted to output/benign/graph126/graph126.json.
+
+
+Input: message,databaseentry,submit
+Output:
+[31mxssstored--Execute XSS Stored Attack[0m
+[31mxssreflected--Execute XSS Reflected Attack[0m
+[31mxssdom--Execute XSS DOM Attack[0m
+[31mcommandinjection--Execute Command Injection Attack[0m
+[31msqlinjection--Execute SQL Injection Attack[0m
+[31mbruteforce--Execute Brute Force Attack[0m
+[31mcustomattack--Use My Own Attack[0m
+[32mmessage--Message Board Post (Benign version of XSS stored)[0m
+[32msubmit--Complete a Questionnaire (Benign version of XSS reflected)[0m
+[32mquery--Query a Webpage (Benign version of XSS DOM)[0m
+[32mping--Ping Local Host (Benign version of command injection)[0m
+[32mdatabaseentry--Create a User ID (Benign version of SQL injection)[0m
+[32mlogin--Enter Username and Password (Benign version of brute force)[0m
+[32mcustombehavior--Use My Own Custom Behavior[0m
+Select one or more attacks to run in a comma-separated list: >> 1 iteration(s) made
+>> Whole system provenance capture granularity is used
+> COARSE granularity (ie W3C-PROV model types) for edge types is used
+> FINE granularity (ie Camflow-provided node and edge types) for node types is used
+Driver initialized.
+Connecting MQTT subscriber...
+Connected with result code 0
+running /home/teehee2/flurry/flurry/scripts/messageboard.py
+running /home/teehee2/flurry/flurry/scripts/databaseentry.py
+running /home/teehee2/flurry/flurry/scripts/questionnaire.py
+Saving graph to database...
+type: 0.04325532913208008
+edges: 2.5272369384765625e-05
+Graph 127 saved.
+Drawing graph...
+Graph drawn to output/benign/graph127/graph127.png.
+converting graph to pickle...
+Making NetworkX Graph...
+Graph constructed.
+Graph pickle outputted to output/benign/graph127/graph127.gpickle.
+outputting node types to JSON format...
+Node types outputted to output/benign/graph127/nodetypes127.json.
+outputting edge types to JSON format...
+Edge types outputted to output/benign/graph127/edgetypes127.json.
+outputting graph to JSON format...
+Graph outputted to output/benign/graph127/graph127.json.
+
+
+Input: message,databaseentry,login
+Output:
+[31mxssstored--Execute XSS Stored Attack[0m
+[31mxssreflected--Execute XSS Reflected Attack[0m
+[31mxssdom--Execute XSS DOM Attack[0m
+[31mcommandinjection--Execute Command Injection Attack[0m
+[31msqlinjection--Execute SQL Injection Attack[0m
+[31mbruteforce--Execute Brute Force Attack[0m
+[31mcustomattack--Use My Own Attack[0m
+[32mmessage--Message Board Post (Benign version of XSS stored)[0m
+[32msubmit--Complete a Questionnaire (Benign version of XSS reflected)[0m
+[32mquery--Query a Webpage (Benign version of XSS DOM)[0m
+[32mping--Ping Local Host (Benign version of command injection)[0m
+[32mdatabaseentry--Create a User ID (Benign version of SQL injection)[0m
+[32mlogin--Enter Username and Password (Benign version of brute force)[0m
+[32mcustombehavior--Use My Own Custom Behavior[0m
+Select one or more attacks to run in a comma-separated list: >> 1 iteration(s) made
+>> Whole system provenance capture granularity is used
+> COARSE granularity (ie W3C-PROV model types) for edge types is used
+> FINE granularity (ie Camflow-provided node and edge types) for node types is used
+Driver initialized.
+Connecting MQTT subscriber...
+Connected with result code 0
+running /home/teehee2/flurry/flurry/scripts/messageboard.py
+running /home/teehee2/flurry/flurry/scripts/databaseentry.py
+running /home/teehee2/flurry/flurry/scripts/singlelogin.py
+Saving graph to database...
+type: 0.04225945472717285
+edges: 2.2649765014648438e-05
+Graph 128 saved.
+Drawing graph...
+Graph drawn to output/benign/graph128/graph128.png.
+converting graph to pickle...
+Making NetworkX Graph...
+Graph constructed.
+Graph pickle outputted to output/benign/graph128/graph128.gpickle.
+outputting node types to JSON format...
+Node types outputted to output/benign/graph128/nodetypes128.json.
+outputting edge types to JSON format...
+Edge types outputted to output/benign/graph128/edgetypes128.json.
+outputting graph to JSON format...
+Graph outputted to output/benign/graph128/graph128.json.
+
+
+Input: message,login,ping
+Output:
+[31mxssstored--Execute XSS Stored Attack[0m
+[31mxssreflected--Execute XSS Reflected Attack[0m
+[31mxssdom--Execute XSS DOM Attack[0m
+[31mcommandinjection--Execute Command Injection Attack[0m
+[31msqlinjection--Execute SQL Injection Attack[0m
+[31mbruteforce--Execute Brute Force Attack[0m
+[31mcustomattack--Use My Own Attack[0m
+[32mmessage--Message Board Post (Benign version of XSS stored)[0m
+[32msubmit--Complete a Questionnaire (Benign version of XSS reflected)[0m
+[32mquery--Query a Webpage (Benign version of XSS DOM)[0m
+[32mping--Ping Local Host (Benign version of command injection)[0m
+[32mdatabaseentry--Create a User ID (Benign version of SQL injection)[0m
+[32mlogin--Enter Username and Password (Benign version of brute force)[0m
+[32mcustombehavior--Use My Own Custom Behavior[0m
+Select one or more attacks to run in a comma-separated list: >> 1 iteration(s) made
+>> Whole system provenance capture granularity is used
+> COARSE granularity (ie W3C-PROV model types) for edge types is used
+> FINE granularity (ie Camflow-provided node and edge types) for node types is used
+Driver initialized.
+Connecting MQTT subscriber...
+Connected with result code 0
+running /home/teehee2/flurry/flurry/scripts/messageboard.py
+running /home/teehee2/flurry/flurry/scripts/singlelogin.py
+running /home/teehee2/flurry/flurry/scripts/commandlineping.py
+Saving graph to database...
+type: 0.012126445770263672
+edges: 0.00017213821411132812
+Graph 129 saved.
+Drawing graph...
+Graph drawn to output/benign/graph129/graph129.png.
+converting graph to pickle...
+Making NetworkX Graph...
+Graph constructed.
+Graph pickle outputted to output/benign/graph129/graph129.gpickle.
+outputting node types to JSON format...
+Node types outputted to output/benign/graph129/nodetypes129.json.
+outputting edge types to JSON format...
+Edge types outputted to output/benign/graph129/edgetypes129.json.
+outputting graph to JSON format...
+Graph outputted to output/benign/graph129/graph129.json.
+
+

@@ -40,7 +40,10 @@ def main():
         successful_runs = []
 
         # Save output and specifically, the unsuccessful runs in a .txt file
-        output_file = 'generate_graphs/webserver_output/' + str(input("Enter a tag (no whitespaces) for this test run: ")) + '.txt'
+        run_tag = str(input("Enter a tag (no whitespaces) for this test run: "))
+        output_file = 'generate_graphs/webserver_output/' + run_tag + '.txt'
+        successful_run_output_file = 'generate_graphs/webserver_output/successful_runs/' + run_tag + '.txt'
+
         lines = read_input_file(scenarios_file)
         if not lines:
             print("Input file is empty or not found.")
@@ -56,9 +59,14 @@ def main():
             with open(output_file, 'a') as f:
                 f.write(f"Input: {line}\nOutput:\n{output}\n\n")
             if error:
+
                 unsuccessful_runs.append((line, error))
             else:
                 successful_runs.append(line)
+
+                # Write successful runs to corresponding .txt file in /successful_runs for debugging
+                with open(successful_run_output_file, 'a') as f:
+                    f.write(f"{line}\n")
 
         if successful_runs:
             # Write to output file

@@ -1,12 +1,5 @@
-1849 possible combinations of actions:
+1842 possible combinations of actions:
 message,submit,query
-message,query,submit
-message,query,ping
-message,ping,query
-message,ping,login
-message,databaseentry,submit
-message,databaseentry,login
-message,login,ping
 submit,ping,query
 submit,databaseentry,ping
 submit,databaseentry,login
