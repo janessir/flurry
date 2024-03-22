@@ -1,0 +1,22 @@
+Input: message,submit,query
+Output:
+[31mxssstored--Execute XSS Stored Attack[0m
+[31mxssreflected--Execute XSS Reflected Attack[0m
+[31mxssdom--Execute XSS DOM Attack[0m
+[31mcommandinjection--Execute Command Injection Attack[0m
+[31msqlinjection--Execute SQL Injection Attack[0m
+[31mbruteforce--Execute Brute Force Attack[0m
+[31mcustomattack--Use My Own Attack[0m
+[32mmessage--Message Board Post (Benign version of XSS stored)[0m
+[32msubmit--Complete a Questionnaire (Benign version of XSS reflected)[0m
+[32mquery--Query a Webpage (Benign version of XSS DOM)[0m
+[32mping--Ping Local Host (Benign version of command injection)[0m
+[32mdatabaseentry--Create a User ID (Benign version of SQL injection)[0m
+[32mlogin--Enter Username and Password (Benign version of brute force)[0m
+[32mcustombehavior--Use My Own Custom Behavior[0m
+Select one or more attacks to run in a comma-separated list: >> 1 iteration(s) made
+>> Whole system provenance capture granularity is used
+> COARSE granularity (ie W3C-PROV model types) for edge types is used
+> FINE granularity (ie Camflow-provided node and edge types) for node types is used
+
+

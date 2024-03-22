@@ -1,0 +1,4 @@
+message,submit,query
+submit,databaseentry,login
+databaseentry,query,login
+databaseentry,ping,login
